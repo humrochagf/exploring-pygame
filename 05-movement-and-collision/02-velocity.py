@@ -20,7 +20,7 @@ ti = time.time()
 
 while True:
     # get how much time has passed
-    # beetween the cycles
+    # between the cycles
     tf = time.time()
     # calculate the delta
     dt = (tf - ti)
@@ -32,7 +32,7 @@ while True:
     if event.type == pygame.QUIT:
         break
 
-    # moves the ball one pixel per cicle
+    # moves the ball one pixel per cycle
     position_x += velocity_x * dt
 
     screen.fill(BLACK)
