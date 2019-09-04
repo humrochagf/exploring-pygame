@@ -12,15 +12,15 @@ screen = pygame.display.set_mode((640, 480))
 pygame.display.set_caption('Velocity')
 
 position_x = 0
-# 10 pyxels per second
+# 100 pixels per second
 velocity_x = 100
 
 # capture the initial time
 ti = time.time()
 
 while True:
-    # get how much time has passed
-    # between the cycles
+    # gets the time for
+    # this cycle
     tf = time.time()
     # calculate the delta
     dt = (tf - ti)
@@ -32,7 +32,7 @@ while True:
     if event.type == pygame.QUIT:
         break
 
-    # moves the ball one pixel per cycle
+    # moves the ball at the velocity defined
     position_x += velocity_x * dt
 
     screen.fill(BLACK)
