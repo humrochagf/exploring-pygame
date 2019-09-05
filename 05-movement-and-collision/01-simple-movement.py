@@ -1,7 +1,7 @@
 import pygame
 
 BLACK = pygame.Color(0, 0, 0)
-RED = pygame.Color(255, 0, 0)
+WHITE = pygame.Color(255, 255, 255)
 
 pygame.init()
 
@@ -23,6 +23,6 @@ while True:
     screen.fill(BLACK)
 
     # draws the ball with the incremented position
-    pygame.draw.ellipse(screen, RED, [position_x, 300, 40, 40])
+    pygame.draw.ellipse(screen, WHITE, [position_x, 300, 40, 40])
 
     pygame.display.flip()

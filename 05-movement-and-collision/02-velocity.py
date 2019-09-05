@@ -3,7 +3,7 @@ import time
 import pygame
 
 BLACK = pygame.Color(0, 0, 0)
-RED = pygame.Color(255, 0, 0)
+WHITE = pygame.Color(255, 0, 0)
 
 pygame.init()
 
@@ -37,6 +37,6 @@ while True:
 
     screen.fill(BLACK)
 
-    pygame.draw.ellipse(screen, RED, [position_x, 300, 40, 40])
+    pygame.draw.ellipse(screen, WHITE, [position_x, 300, 40, 40])
 
     pygame.display.flip()
