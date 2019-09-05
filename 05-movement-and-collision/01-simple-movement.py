@@ -17,7 +17,7 @@ while True:
     if event.type == pygame.QUIT:
         break
 
-    # moves the ball one pixel per cycle
+    # moves the square one pixel per cycle
     position_x += 1
 
     screen.fill(BLACK)
