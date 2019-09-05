@@ -23,6 +23,6 @@ while True:
     screen.fill(BLACK)
 
     # draws the ball with the incremented position
-    pygame.draw.ellipse(screen, WHITE, [position_x, 300, 40, 40])
+    pygame.draw.ellipse(screen, WHITE, [position_x, 220, 40, 40])
 
     pygame.display.flip()
