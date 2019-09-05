@@ -32,11 +32,11 @@ while True:
     if event.type == pygame.QUIT:
         break
 
-    # moves the ball at the velocity defined
+    # moves the square at the velocity defined
     position_x += velocity_x * dt
 
     screen.fill(BLACK)
 
-    pygame.draw.ellipse(screen, WHITE, [position_x, 220, 40, 40])
+    pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
 
     pygame.display.flip()

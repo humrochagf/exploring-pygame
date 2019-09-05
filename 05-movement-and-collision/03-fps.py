@@ -32,6 +32,6 @@ while True:
 
     screen.fill(BLACK)
 
-    pygame.draw.ellipse(screen, WHITE, [position_x, 220, 40, 40])
+    pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
 
     pygame.display.flip()

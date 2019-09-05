@@ -9,12 +9,12 @@ screen = pygame.display.set_mode((640, 480))
 
 pygame.display.set_caption('Collision')
 
-# create the ball Rect
-ball = pygame.Rect(300, 220, 40, 40)
+# create the square Rect
+square = pygame.Rect(300, 230, 20, 20)
 
 # create the pads Rect
-left_pad = pygame.Rect(20, 200, 20, 80)
-right_pad = pygame.Rect(600, 200, 20, 80)
+left_pad = pygame.Rect(20, 210, 20, 60)
+right_pad = pygame.Rect(600, 210, 20, 60)
 
 pads = [left_pad, right_pad]
 
@@ -31,16 +31,16 @@ while True:
         break
 
     # use the move function inplace
-    ball.move_ip(velocity_x * dt, 0)
+    square.move_ip(velocity_x * dt, 0)
 
     # check for collision with the pads
-    if ball.collidelist(pads) >= 0:
+    if square.collidelist(pads) >= 0:
         velocity_x = -velocity_x
 
     screen.fill(BLACK)
 
     # draw using the rect
-    pygame.draw.ellipse(screen, WHITE, ball)
+    pygame.draw.rect(screen, WHITE, square)
 
     # draw the pads
     for pad in pads:

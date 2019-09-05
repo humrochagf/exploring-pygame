@@ -22,7 +22,7 @@ while True:
 
     screen.fill(BLACK)
 
-    # draws the ball with the incremented position
-    pygame.draw.ellipse(screen, WHITE, [position_x, 220, 40, 40])
+    # draws the square with the incremented position
+    pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
 
     pygame.display.flip()
